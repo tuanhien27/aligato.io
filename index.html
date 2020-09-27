@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alligator</title>
+    <link href="./style/header.css" rel="stylesheet">
+    <link href="style/body.css" rel="stylesheet">
+    <link href="./style/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="style/reponsive.css">
+</head>
+<body>
+    <section id="header">
+        <ul class="header-left">
+            <li class="header-language"><i class="fas fa-bolt"></i>&nbsp Latest</li>
+            <li class="header-language">JavaScript</li>
+            <li class="header-language">Vue.js</li>
+            <li class="header-language">React</li>
+            <li class="header-language">Angular</li>
+            <li class="header-language">CSS</li>
+            <li class="header-language">Gatsby</li>
+            <li class="header-language extra-menu">
+                <i class="fas fa-arrow-down" title="extra menu"></i> 
+                <ul class="menu-hidden">
+                    <li>
+                        <ul class="menu-show">
+                            <li>Resources</li>
+                            <li>Nodejs</li>
+                            <li>TypeScript</li>
+                            <li>Svelte</li>
+                            <li>lonic</li>
+                            <li>Stencil</li>
+                            <li>RxJS</li>
+                            <li>Redux</li>
+                            <li>Testing</li>
+                            <li>GraphQl</li>
+                            <li>Workflow</li>
+                            <li>SVG</li>
+                            <li>Electron</li>
+                            <li>Flow</li>
+                            <li>Jekyll</li>
+                            <li>Sass</li>
+                            <li>HTML</li>
+                            <li>Web Components</li>
+                            <li>Flutter</li>
+                            <li>Polymer</li>
+                        </ul>
+                    </li>  
+                </ul>                                            
+            </li>
+            <li class="header-language theme-switcher">
+                <i class="far fa-circle" title="theme switcher"></i>
+                <ul class="menu-hidden">
+                    <ul class="menu-show theme-show">
+                        <li class="button-theme" onclick="changeTheme('white')">
+                            <i class="far fa-circle theme-white"></i>&nbsp Light
+                        </li>
+                        <li class="button-theme" onclick="changeTheme('dark')">
+                            <i class="far fa-circle theme-dark"></i>&nbsp Dark
+                        </li>
+                        <li class="button-theme" onclick="changeTheme('solarized')">
+                            <i class="far fa-circle theme-solarized"></i>&nbsp Solarized
+                        </li>
+                        <li class="button-theme" onclick="changeTheme('solarizedDark')">
+                            <i class="far fa-circle theme-last"></i>&nbsp Solarized Dark
+                        </li>
+                    </ul>  
+                </ul> 
+            </li>
+            <li class="icon-reponsive"><i class="fas fa-bolt"></i>&nbsp Explore</li>
+        </ul>
+        <ul class="header-right">
+            <form action="#" method="GET">
+                <i class="fas fa-search"></i>
+                <input class="input-search" type='search' placeholder="live search" onclick="runSearch()">
+            </form>
+                
+            <li class="header-twitter">
+                <i class="fab fa-twitter"></i>
+            </li>
+        </ul>
+    </section>
+
+    <section id="container">
+        <div class="wrap-introduce-total">
+            <div class="introduce-total">
+                <img src="https://d33wubrfki0l68.cloudfront.net/4e5626a0b7db6b84c0b51f1c0cfd56490fc19b74/7a5ad/images/logo-fancy.svg" alt="hello">
+                <h1>Front-End Web Development, <br>
+                    Chewed Up
+                </h1>
+                <p>Angular 2+, Vue.js, React, Svelte <br>
+                    JavaScript, CSS, Node.js...
+                </p>
+            </div>
+        </div>       
+        <div class="top-post">
+            <h2>🏆 Top Posts</h2>
+            <div class="dialog-all">
+                <div class="dialog-box box-special">
+                    <div class="labels-small"></div>
+                    <span>Using Type Script with React</span>
+                </div>
+                <div class="dialog-box box-special">
+                    <div class="labels-small green-color"></div>
+                    <span>Builing a Modal Component with Vue.js</span>
+                </div>
+                <div class="dialog-box box-special">
+                    <div class="labels-small"></div>
+                    <span>Using Axios with React</span>
+                </div>
+                <div class="dialog-box box-special">
+                    <div class="labels-small yellow-color"></div>
+                    <span>Exploring Async/Await Functions in JavaScript</span>
+                </div>
+                <div class="dialog-box box-special">
+                    <div class="labels-small"></div>
+                    <span>Cropping Images in CSS with object-fit</span>
+                </div>
+                <div class="dialog-box box-special">
+                    <div class="labels-small"></div>
+                    <span>Pure CSS with Parallax Scrolling Effect</span>
+                </div>
+
+            </div>          
+        </div>
+        <div class="wrap-letter">
+            <div class="letter">
+                <h1>Alligator.io is joining the DigitalOcean Community!</h1>
+                <p>I started Alligator.io a few years ago as a way to help me learn and share my insights with the community. At the time, I had no idea it would grow to become the platform it is today, and I couldn’t be prouder.</p>
+                <p>As the platform grew, it welcomed contributors from all backgrounds to publish about what they know and love with the community.</p>
+                <p>Always with a deep love and appreciation for the web platform and the JavaScript ecosystem, Alligator.io has now grown to be a major source of knowledge for anybody who's interested in modern web development.</p>
+                <p>I’m excited to announce that starting in May, Alligator.io will be joining the <a href="#">DigitalOcean Community</a> .</p>
+                <p>While the topics covered within each of our sites are different, we share a passion for technical writing and a common goal of helping developers build, solve problems, and learn.</p>
+                <ul class="letter-ul">
+                    <li>DigitalOcean is committed to maintaining the library of alligator.io articles</li>
+                    <li>Writers on Alligator.io can keep getting paid to publish via the <a href="#">Write4DO program</a> </li>
+                    <li>DigitalOcean developers are focused on combining the strengths of each platform into one 
+                        &nbsp &nbsp &nbsp &nbsp &nbsp 
+                        that provides a best-in-class, open and accessible learning environment
+                    </li>
+                </ul>
+                <p>I'm forever grateful for the hard work and dedication of all contributors over the years, and I look forward to seeing our writing continue to reach new generations of developers.</p>
+                
+                <div class="letter-sign">
+                    <span>-</span>
+                    <span class="letter-name">Seb</span>
+                </div>
+            </div>
+            <div class="letter-space"></div>
+        </div>      
+        <div class="course">
+            <div class="wrap-course">
+                <div class="course-vuejs">
+                    <h1><i class="fab fa-vuejs"></i>  Vue.js</h1>
+                    <div class="dialog-all">
+                        <div class="dialog-box">
+                            <div class="labels-small"></div>
+                            <span>Using Type Script with React</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small green-color"></div>
+                            <span>Builing a Modal Component with Vue.js</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small"></div>
+                            <span>Using Axios with React</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small yellow-color"></div>
+                            <span>Exploring Async/Await Functions in JavaScript</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small"></div>
+                            <span>Cropping Images in CSS with object-fit</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small"></div>
+                            <span>Pure CSS with Parallax Scrolling Effect</span>
+                        </div>
+                    </div>
+                    <button class="btn">All Vue Posts</button>
+                    <div class="line"></div>
+                </div>
+
+                <div class="course-vuejs react-2">
+                    <h1><i class="fab fa-react"></i>  React</h1>
+                    <div class="dialog-all">
+                        <div class="dialog-box">
+                            <div class="labels-small react-small"></div>
+                            <span>Using Type Script with React</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small green-color react-small"></div>
+                            <span>Builing a Modal Component with Vue.js</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small react-small"></div>
+                            <span>Using Axios with React</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small yellow-color react-small"></div>
+                            <span>Exploring Async/Await Functions in JavaScript</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small react-small"></div>
+                            <span>Cropping Images in CSS with object-fit</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small react-small"></div>
+                            <span>Pure CSS with Parallax Scrolling Effect</span>
+                        </div>
+                    </div>
+                    <button class="btn">All React Posts</button>
+                    <div class="line"></div>
+                </div>
+                <div class="course-vuejs javaScript-2">
+                    <h1><i class="fab fa-js"></i> JavaScript</h1>
+                    <div class="dialog-all">
+                        <div class="dialog-box">
+                            <div class="labels-small js-small"></div>
+                            <span>Binary Heaps and Priority Queues via JavaScript</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small green-color js-small"></div>
+                            <span>Mutable Immutable JavaScript</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small js-small"></div>
+                            <span>A Brief Tour of the Eleventy Static Site Generator</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small yellow-color js-small"></div>
+                            <span>How to Detect Idle Browser Tabs with the Page Visibility API</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small js-small"></div>
+                            <span>What Are Cookies & How to Work With Them Using JavaScript</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small js-small"></div>
+                            <span>Quick Tour of date-fns, a Simple JavaScript Date Library</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-js">All JavaScript Posts</button>
+                    <div class="line"></div>
+                </div>
+                <div class="course-vuejs css-2">
+                    <h1><i class="fab fa-css3"></i> CSS</h1>
+                    <div class="dialog-all">
+                        <div class="dialog-box">
+                            <div class="labels-small css-small"></div>
+                            <span>CSS System Font Stack Reference</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small green-color css-small"></div>
+                            <span>Styling Scrollbars with CSS: The Modern Way to Style Scrollbars</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small css-small"></div>
+                            <span>Using the CSS line-height Property to Improve Readability</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small yellow-color css-small"></div>
+                            <span>How to Use the CSS :root Pseudo-Class Selector</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small css-small"></div>
+                            <span>When Should You Use the CSS !important Rule?</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small css-small"></div>
+                            <span>The Mighty CSS z-index Property</span>
+                        </div>
+                    </div>
+                    <button class="btn">All CSS Posts</button>
+                    <div class="line"></div>
+                </div>
+                <div class="course-vuejs angular-2">
+                    <h1><i class="fab fa-angular"></i> Angular 2+</h1>
+                    <div class="dialog-all">
+                        <div class="dialog-box">
+                            <div class="labels-small angular-small"></div>
+                            <span>Component Communication in Angular</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small green-color angular-small"></div>
+                            <span>Custom Form Validation in Angular</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small angular-small"></div>
+                            <span>Building Maps in Angular using Leaflet, Part 4: The Shape Service</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small yellow-color angular-small"></div>
+                            <span>Building Maps in Angular using Leaflet, Part 3: The Popup Service</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small angular-small"></div>
+                            <span>Building Maps in Angular using Leaflet, Part 2: The Marker Service</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small angular-small"></div>
+                            <span>Building Maps in Angular Using Leaflet, Part 1: Generating Maps</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-angular">All Angular Posts</button>
+                    <div class="line"></div>
+                </div>
+                <div class="course-vuejs workflow-2">
+                    <h1>Workflow</h1>
+                    <div class="dialog-all">
+                        <div class="dialog-box">
+                            <div class="labels-small workflow-small"></div>
+                            <span>Taking a Look at the GitHub CLI Tool</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small green-color workflow-small"></div>
+                            <span>Linting on Save with Visual Studio Code and ESLint</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small workflow-small"></div>
+                            <span>Deploying a Docker Application with AWS</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small yellow-color workflow-small"></div>
+                            <span>Introduction to Kubernetes</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small workflow-small"></div>
+                            <span>Working with Multiple Containers Using Docker Compose</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small workflow-small"></div>
+                            <span>How To: Publishing Your First Package to npm</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-angular">All Workflow Posts</button>
+                    <div class="line"></div>
+                </div>
+                <div class="course-vuejs gatsby-2">
+                    <h1><img src="./img/Gatsby.png" width="32px" height="32px">&nbsp Gatsby</h1>
+                    <div class="dialog-all">
+                        <div class="dialog-box">
+                            <div class="labels-small gatsby-small"></div>
+                            <span>Using React Hooks in Gatsby</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small green-color gatsby-small"></div>
+                            <span>Pagination in Gatsby Using gatsby-awesome-pagination</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small gatsby-small"></div>
+                            <span>Exploring TinaCMS with Gatsby</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small yellow-color gatsby-small"></div>
+                            <span>State Management in Gatsby using the wrapRootElement Hook</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small gatsby-small"></div>
+                            <span>Internationalized Navigation Menu in Gatsby.js</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small gatsby-small"></div>
+                            <span>Creating a Multilingual Website with Gatsby & Cosmic JS</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-angular">All Gatsby Posts</button>
+                    <div class="line"></div>
+                </div>
+                <div class="course-vuejs nodejs-2">
+                    <h1> Node.js</h1>
+                    <div class="dialog-all">
+                        <div class="dialog-box">
+                            <div class="labels-small nodejs-small"></div>
+                            <span>CSS System Font Stack Reference</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small green-color nodejs-small"></div>
+                            <span>Styling Scrollbars with CSS: The Modern Way to Style Scrollbars</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small nodejs-small"></div>
+                            <span>Using the CSS line-height Property to Improve Readability</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small yellow-color nodejs-small"></div>
+                            <span>How to Use the CSS :root Pseudo-Class Selector</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small nodejs-small"></div>
+                            <span>When Should You Use the CSS !important Rule?</span>
+                        </div>
+                        <div class="dialog-box">
+                            <div class="labels-small nodejs-small"></div>
+                            <span>The Mighty CSS z-index Property</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-nodejs">All Node.js Posts</button>
+                </div>
+
+            </div>
+                       
+        </div>
+    </section>
+
+
+    <section class="footer-test">
+        <div class="footer-container">
+            <div class="item cell-black"></div>
+            <div class="item  cell-black"></div>
+            <div class="item item-show"> <a href="#">About</a></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show"> <a href="#">Contact</a></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show"> <a href="#">Credits</a></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show"> <a href="#">Privacy</a></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+        </div>
+        <h3>Note that we link to certain 3rd party products via affiliate or sponsored links. You <br> can <a href="#">learn more about it here</a> .</h3>
+        <h3>Code snippets licensed under <a href="#">MIT</a> , unless otherwise noted.
+         <br>   Content & Graphics © 2020 Alligator.io LLC</h3>
+    </section>
+
+
+    <script src="run.js"></script>
+</body>
+</html>
