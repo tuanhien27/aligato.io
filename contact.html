@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="./style/header.css" rel="stylesheet">
+    <link href="style/header-about.css" rel="stylesheet">
+    <link href="./style/body-contact.css" rel="stylesheet">
+    <link href="./style/footer.css" rel="stylesheet">
+    <link href="style/footer-about.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="style/reponsive-about.css">
+    <link rel="stylesheet" href="style/reponsive-contact.css">
+</head>
+<body>
+    <section id="header">
+        <ul class="header-left">
+            <li class="header-language header-icon">
+                <img src="https://d33wubrfki0l68.cloudfront.net/4e5626a0b7db6b84c0b51f1c0cfd56490fc19b74/7a5ad/images/logo-fancy.svg" alt="hello">
+            </li>
+            <li class="header-language header-hover">
+                <i class="fas fa-bolt"></i>
+                &nbsp Latest
+            </li>
+            <li class="header-language header-hover">JavaScript</li>
+            <li class="header-language header-hover">Vue.js</li>
+            <li class="header-language header-hover">React</li>
+            <li class="header-language header-hover">Angular</li>
+            <li class="header-language header-hover">CSS</li>
+            <li class="header-language header-hover">Gatsby</li>
+            <li class="header-language header-hover-1 extra-menu">
+                <i class="fas fa-arrow-down" title="extra menu"></i> 
+                <ul class="menu-hidden">
+                    <li>
+                        <ul class="menu-show">
+                            <li>Resources</li>
+                            <li>Nodejs</li>
+                            <li>TypeScript</li>
+                            <li>Svelte</li>
+                            <li>lonic</li>
+                            <li>Stencil</li>
+                            <li>RxJS</li>
+                            <li>Redux</li>
+                            <li>Testing</li>
+                            <li>GraphQl</li>
+                            <li>Workflow</li>
+                            <li>SVG</li>
+                            <li>Electron</li>
+                            <li>Flow</li>
+                            <li>Jekyll</li>
+                            <li>Sass</li>
+                            <li>HTML</li>
+                            <li>Web Components</li>
+                            <li>Flutter</li>
+                            <li>Polymer</li>
+                        </ul>
+                    </li>  
+                </ul>                                            
+            </li>
+            <li class="header-language  header-hover-1 theme-switcher">
+                <i class="far fa-circle" title="theme switcher"></i>
+                <ul class="menu-hidden">
+                    <ul class="menu-show theme-show">
+                        <li class="button-theme" onclick="changeTheme('white')">
+                            <i class="far fa-circle theme-white"></i>&nbsp Light
+                        </li>
+                        <li class="button-theme" onclick="changeTheme('dark')">
+                            <i class="far fa-circle theme-dark"></i>&nbsp Dark
+                        </li>
+                        <li class="button-theme" onclick="changeTheme('solarized')">
+                            <i class="far fa-circle theme-solarized"></i>&nbsp Solarized
+                        </li>
+                        <li class="button-theme" onclick="changeTheme('solarizedDark')">
+                            <i class="far fa-circle theme-last"></i>&nbsp Solarized Dark
+                        </li>
+                    </ul>  
+                </ul> 
+            </li>
+            <li class="icon-reponsive"><i class="fas fa-bolt"></i>&nbsp Explore</li>
+        </ul>
+        <ul class="header-right">
+            <form action="#" method="GET">
+                <i class="fas fa-search"></i>
+                <input class="input-search" type='search' placeholder="live search" onclick="runSearch()">
+            </form>
+                
+            <li class="header-twitter">
+                <i class="fab fa-twitter"></i>
+            </li>
+        </ul>
+    </section>
+
+    <section id="container-contact">
+        <div class="contact-about">
+            <h1>Contact</h1>
+            <p>Don't be a stranger, drop us a line! 💌</p>
+            <p>📝 <strong>Want to write for Alligator.io?</strong>
+                 We're always on the lookout for content collaborators. 
+                 Just get in touch to introduce yourself! 
+                 You can <a href="#">head over here</a> for more details.</p>
+            <p>You can review our <a href="#">style guide here</a> .</p>
+        </div>
+        <div class="contact-form">
+            <form method="POST" name="sendmail">
+                <p>Unfortunately we can't answer individual code questions due to lack <br> of time.</p>
+                <p class="put-info">
+                    <label>Your Name</label><br>
+                    <input type="text" name="name" onclick="contact()">
+                </p>
+               <p class="put-info"> 
+                    <label>Your Email</label><br>
+                    <input type="email" name="email" onclick="contact()">
+               </p>
+                <p class="put-info">
+                    <label>Message</label><br>
+                    <textarea name="comment"></textarea>
+                </p>
+                <p>
+                    <button>Ok, send 💨</button>
+                </p>
+                
+            </form>
+            
+            
+        </div>
+    </section>
+
+    <section class="footer-test">
+        <div class="footer-container">
+            <div class="item cell-black"></div>
+            <div class="item  cell-black"></div>
+            <div class="item item-show item1"> <a href="#">About</a></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show item2"> <a href="#">Contact</a></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show item3"> <a href="#">Credits</a></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show item4"> <a href="#">Privacy</a></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+        </div>
+        <h3>Note that we link to certain 3rd party products via affiliate or sponsored links. You <br> can <a href="#">learn more about it here</a> .</h3>
+        <h3>Code snippets licensed under <a href="#">MIT</a> , unless otherwise noted.
+         <br>   Content & Graphics © 2020 Alligator.io LLC</h3>
+    </section>
+
+    <script src="run.js"></script>
+</body>
+</html>

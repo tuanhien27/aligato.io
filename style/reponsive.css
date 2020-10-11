@@ -28,7 +28,7 @@
         padding-left: 20px;
     }
     .letter {
-        padding: 0 200px;
+        padding: 0 180px;
     }
     .item a {
         font-size: 18px;
@@ -52,7 +52,7 @@
 
 @media (max-width:768px) {
     .letter {
-        padding: 0 130px;
+        padding: 0 30px;
     }
     .introduce-total h1 {
         font-size: 30px;

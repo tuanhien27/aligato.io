@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="./style/header.css" rel="stylesheet">
+    <link href="style/header-about.css" rel="stylesheet">
+    <link href="style/body-about.css" rel="stylesheet">
+    <link href="./style/footer.css" rel="stylesheet">
+    <link href="style/footer-about.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="style/reponsive-about.css">
+</head>
+<body>
+    <section id="header">
+        <ul class="header-left">
+            <li class="header-language header-icon">
+                <img src="https://d33wubrfki0l68.cloudfront.net/4e5626a0b7db6b84c0b51f1c0cfd56490fc19b74/7a5ad/images/logo-fancy.svg" alt="hello">
+            </li>
+            <li class="header-language header-hover">
+                <i class="fas fa-bolt"></i>
+                &nbsp Latest
+            </li>
+            <li class="header-language header-hover">JavaScript</li>
+            <li class="header-language header-hover">Vue.js</li>
+            <li class="header-language header-hover">React</li>
+            <li class="header-language header-hover">Angular</li>
+            <li class="header-language header-hover">CSS</li>
+            <li class="header-language header-hover">Gatsby</li>
+            <li class="header-language header-hover-1 extra-menu">
+                <i class="fas fa-arrow-down" title="extra menu"></i> 
+                <ul class="menu-hidden">
+                    <li>
+                        <ul class="menu-show">
+                            <li>Resources</li>
+                            <li>Nodejs</li>
+                            <li>TypeScript</li>
+                            <li>Svelte</li>
+                            <li>lonic</li>
+                            <li>Stencil</li>
+                            <li>RxJS</li>
+                            <li>Redux</li>
+                            <li>Testing</li>
+                            <li>GraphQl</li>
+                            <li>Workflow</li>
+                            <li>SVG</li>
+                            <li>Electron</li>
+                            <li>Flow</li>
+                            <li>Jekyll</li>
+                            <li>Sass</li>
+                            <li>HTML</li>
+                            <li>Web Components</li>
+                            <li>Flutter</li>
+                            <li>Polymer</li>
+                        </ul>
+                    </li>  
+                </ul>                                            
+            </li>
+            <li class="header-language  header-hover-1 theme-switcher">
+                <i class="far fa-circle" title="theme switcher"></i>
+                <ul class="menu-hidden">
+                    <ul class="menu-show theme-show">
+                        <li class="button-theme" onclick="changeTheme('white')">
+                            <i class="far fa-circle theme-white"></i>&nbsp Light
+                        </li>
+                        <li class="button-theme" onclick="changeTheme('dark')">
+                            <i class="far fa-circle theme-dark"></i>&nbsp Dark
+                        </li>
+                        <li class="button-theme" onclick="changeTheme('solarized')">
+                            <i class="far fa-circle theme-solarized"></i>&nbsp Solarized
+                        </li>
+                        <li class="button-theme" onclick="changeTheme('solarizedDark')">
+                            <i class="far fa-circle theme-last"></i>&nbsp Solarized Dark
+                        </li>
+                    </ul>  
+                </ul> 
+            </li>
+            <li class="icon-reponsive"><i class="fas fa-bolt"></i>&nbsp Explore</li>
+        </ul>
+        <ul class="header-right">
+            <form action="#" method="GET">
+                <i class="fas fa-search"></i>
+                <input class="input-search" type='search' placeholder="live search" onclick="runSearch()">
+            </form>
+                
+            <li class="header-twitter">
+                <i class="fab fa-twitter"></i>
+            </li>
+        </ul>
+    </section>
+
+    <section id="container">
+        <div class="introduce">
+            <img src="https://alligator.io/images/alligator-frontend-web.png" alt="A Word About Alligator.io" itemprop="image">
+            <h1>A Word About Alligator.io</h1>
+            <ul class="logo-small">
+                <li>
+                    <a href="#">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-ethernet"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-yandex-international"></i>
+                    </a>
+                </li>
+                
+            </ul>
+            <p>
+                Alligator.io is born out of a love for the web platform and Open Source software. The goal is to try and make it easy and quick to understand things that are otherwise daunting to untrained eyes. Modus operandi: 
+                <strong>Why be verbose when you can be succinct</strong>.
+            </p>
+            <p>I hope you'll enjoy the site!</p>
+            <p>Don't hesitate to get in touch <a href="#">via Twitter</a> .</p>
+            <p>✌️+❤️</p>
+        </div>
+
+        <div class="your-host">
+            <h1 class="title-host">YOUR HOST</h1>
+            <img src="https://alligator.io/images/seb.jpg" alt="host">
+            <p class="host-self">Hey there! 👋 I'm Seb, and I'm the person behind this website. I obviously love web development ❤️, but I'm also passionate about design, and photography 📸. In fact, you can check out my other projects: Purple11 💜, where I post quick tutorials/tools about photography and retouching and multicolor.io 🌈, where I share some of my photographs as free stock photos.</p>
+        </div>
+        <div class="collaborators">
+            <h1 class="title-host">
+                ✨ Collaborators ✨
+            </h1>
+            <p>Thanks a ton to the following people for their awesome contributions:</p>
+            <ul class="collaborators-many">
+                <li>Aaron Arney</li>
+                <li>Daniel Schmitz</li>
+                <li>Nataliia Krylova</li>
+                <li>Aaron Ervin</li>
+                <li>Daniel Stout</li>
+                <li>Nate Jacobs</li>
+                <li>Aaron Moreno</li>
+                <li>Danny Denenberg</li>
+                <li>Nipuna Gunathilake</li>
+                <li>Abdulhafeez Abdulraheem</li>
+                <li>Danny Hurlburt</li>
+                <li>Parker McMullin</li>
+                <li>Adebiyi Adedotun</li>
+                <li>Aaron Arney</li>
+                <li>Daniel Schmitz</li>
+                <li>Nataliia Krylova</li>
+                <li>Aaron Ervin</li>
+                <li>Daniel Stout</li>
+                <li>Nate Jacobs</li>
+                <li>Aaron Moreno</li>
+                <li>Danny Denenberg</li>
+                <li>Nipuna Gunathilake</li>
+                <li>Abdulhafeez Abdulraheem</li>
+                <li> Mayuran Selvaraja</li>
+                <li>Danny Hurlburt</li>
+                <li>Parker McMullin</li>
+                <li>Adebiyi Adedotun</li>
+                <li>Aaron Arney</li>
+                <li>Daniel Schmitz</li>
+                <li>Nataliia Krylova</li>
+                <li>Aaron Ervin</li>
+                <li>Daniel Stout</li>
+                <li>Nate Jacobs</li>
+                <li>Aaron Moreno</li>
+                <li>Danny Denenberg</li>
+                <li>Nipuna Gunathilake</li>
+                <li>Abdulhafeez Abdulraheem</li>
+                <li>Danny Hurlburt</li>
+                <li>Parker McMullin</li>
+                <li>Adebiyi Adedotun</li>
+                <li>Aaron Arney</li>
+                <li>Daniel Schmitz</li>
+                <li>Nataliia Krylova</li>
+                <li>Aaron Ervin</li>
+                <li>Daniel Stout</li>
+                <li>Nate Jacobs</li>
+                <li>Aaron Moreno</li>
+                <li>Danny Denenberg</li>
+                <li>Nipuna Gunathilake</li>
+                <li>Abdulhafeez Abdulraheem</li>
+                <li>Danny Hurlburt</li>
+                <li>Parker McMullin</li>
+                <li>Adebiyi Adedotun</li>
+                <li>Aaron Arney</li>
+                <li>Daniel Schmitz</li>
+                <li>Nataliia Krylova</li>
+                <li>Aaron Ervin</li>
+                <li>Daniel Stout</li>
+                <li>Nate Jacobs</li>
+                <li>Aaron Moreno</li>
+                <li>Danny Denenberg</li>
+                <li>Nipuna Gunathilake</li>
+                <li>Abdulhafeez Abdulraheem</li>
+                <li>Danny Hurlburt</li>
+                <li>Nataliia Krylova</li>
+                <li>Parker McMullin</li>
+                <li>Adebiyi Adedotun</li>
+                <li>Aaron Arney</li>
+                <li>Daniel Schmitz</li>
+                <li>Nataliia Krylova</li>
+                <li>Aaron Ervin</li>
+                <li>Daniel Stout</li>
+                <li>Nate Jacobs</li>
+                <li>Aaron Moreno</li>
+                <li>Danny Denenberg</li>
+                <li>Nipuna Gunathilake</li>
+                <li>Abdulhafeez Abdulraheem</li>
+                <li>Danny Hurlburt</li>
+                <li>Parker McMullin</li>
+                <li>Adebiyi Adedotun</li>
+            </ul>
+            <p class="collaborators-like">Interested in collaborating content? &nbsp<a href="#">Get in touch here</a> </p>
+        </div>
+    </section>
+
+    <section class="footer-test">
+        <div class="footer-container">
+            <div class="item cell-black"></div>
+            <div class="item  cell-black"></div>
+            <div class="item item-show"> <a href="#">About</a></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show"> <a href="#">Contact</a></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show"> <a href="#">Credits</a></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show"> <a href="#">Privacy</a></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+        </div>
+        <h3>Note that we link to certain 3rd party products via affiliate or sponsored links. You <br> can <a href="#">learn more about it here</a> .</h3>
+        <h3>Code snippets licensed under <a href="#">MIT</a> , unless otherwise noted.
+         <br>   Content & Graphics © 2020 Alligator.io LLC</h3>
+    </section>
+
+    <script src="run.js"></script>
+</body>
+</html>

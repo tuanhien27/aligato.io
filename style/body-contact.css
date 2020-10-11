@@ -1,0 +1,119 @@
+#container-contact {
+    background-color: #222831;
+    padding: 0 15.6rem;
+    box-sizing: border-box;
+}
+
+.contact-about {
+    color:white;
+    text-align: center;
+}
+
+.contact-about h1 {
+    font-size: 3.5rem;
+    font-family: Recursive, "Segoe UI", "Helvetica Neue", Helvetica, Roboto, 'Open Sans', FreeSans, sans-serif;
+    font-variation-settings: "CASL" 0, "slnt" -5;
+    color: #EFBB35;
+    font-style: italic;
+    font-weight: 100;
+    margin:0;
+    padding-top: 3rem;
+}
+
+.contact-about p {
+    font-size: 1.7rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    line-height: 40px;
+}
+
+.contact-about p:nth-child(2) {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.contact-about p:nth-child(3) {
+    text-align: left;
+}
+
+.contact-about p:nth-child(4) {
+    text-align: left;
+}
+
+.contact-about a {
+    /* text-decoration: none; */
+    color: #EF9B32;
+    opacity: 0.8;
+    transition: 0.4s;
+    text-decoration: underline dotted;
+    
+}
+
+.contact-about a:hover {
+    opacity: 1;
+}
+
+form p:nth-child(1) {
+    font-size: 1.7rem;
+    border-left: 3px solid #83712A;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #1A1D24;
+    color:#ECEBC0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: 100;
+}
+
+.put-info {
+    font-size: 1.7rem;
+    color:#ECEBC0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: 100;
+}
+
+.put-info label {
+    background: #373831;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.put-info input {
+    background-color: #1A1D24;
+    width: 100%;
+    padding: 9px 0;
+    border: 1px solid #997C2E;
+    outline: none;
+}
+
+textarea {
+    height: 250px;
+    width: 100%;
+    background-color: #1A1D24;
+    border: 1px solid #997C2E;
+}
+
+form button {
+    padding: 8px 14px;
+    background-color: #1A1D24;
+    color:#997C2E;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border: none;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+form button:hover {
+    transform: translateY(-0.2rem);
+}
+
+form p:last-child {
+    margin:0;
+    padding:0;
+    text-align: center;
+}

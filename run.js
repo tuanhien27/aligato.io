@@ -16,7 +16,6 @@ var colorFooter = document.querySelectorAll('.item-show');
 var bgButton = document.querySelectorAll('.btn');
 
 function changeTheme(color) {
-    console.log('tôi là hiển'+ color);
     
     if (color == 'white') {
         bgIntroduce.style.backgroundColor = color;
@@ -100,9 +99,33 @@ function changeTheme(color) {
             colorFooter[i].style.backgroundColor = '#003D4C';
         }
     } else {
-        window.onload;
-    }
-    
+        bgIntroduce.style.backgroundColor = '#222831';
+        bgTopPost.style.backgroundColor = '#222831';
+        for (let i = 0; i < bgButton.length; i++) {
+            bgButton[i].style.backgroundColor = '#1A1D24';
+        }
+        bgCourses.style.backgroundColor = '#2E2E28';
+        bgFooter.style.backgroundColor = '#2E2E28';
+        bgLetterSpace.style.backgroundColor = '#2E2E28';
+        for (let i = 0; i < colorText.length; i++) {
+            colorText[i].style.color = 'white';
+        }
+        for (let i = 0; i < colorText2.length; i++) {
+            colorText2[i].style.color = 'white';
+        }
+        for (let i = 0; i < dialogBox.length; i++) {
+            dialogBox[i].style.backgroundColor = '#1A1D24';
+        }
+        bgLetter.style.backgroundColor = '#222831';
+        bgWrapLetter.style.backgroundColor = '#222831';
+        bgIntroduce2.style.backgroundColor = '#2E2E28';
+        for (let i = 0; i < boxSpecial.length; i++) {
+            boxSpecial[i].style.backgroundColor = '#1A1D24';
+        }
+        for (let i = 0; i < colorFooter.length; i++) {
+            colorFooter[i].style.backgroundColor = '#373831';
+        }
+    }  
 }
 
 
@@ -114,12 +137,49 @@ function runSearch() {
     inputSearch.style.width = "150px";
 }
 
+// bodyPage.onclick = function(e) {
+//     let isClickInside = inputSearch.contains(e.target);
+//     if (isClickInside) {
+//         console.log('click trong');
+//     } else {
+//         console.log('click ngoài');
+//         inputSearch.style.width = "105px";
+//     }
+// }
+
+// thay đổi thẻ form ở trang Contact
+
+var inputName= document.querySelector('input[type="text"]');
+var inputEmail = document.querySelector('input[type="email"]');
+
+function contact() {
+    inputName.style.border = "none";
+    inputEmail.style.border = "none";
+}
+
 bodyPage.onclick = function(e) {
-    let isClickInside = inputSearch.contains(e.target);
+    let isClickInside = inputSearch.contains(e.target); //thay đổi width ở header
     if (isClickInside) {
         console.log('click trong');
     } else {
         console.log('click ngoài');
         inputSearch.style.width = "105px";
     }
+    let isClickinsde1 = inputName.contains(e.target); // ở thẻ form, trang contact
+    let isClickinsde2 = inputEmail.contains(e.target); // thẻ form, trang contact
+    if (isClickinsde1) {
+        console.log('đúng click bên trong rồi nha');
+    } else {
+        inputName.style.border = "1px solid #997C2E";
+        console.log('sai bét là ra màu khác đó');
+    } 
+
+    if (isClickinsde2) {
+        console.log('đúng click bên trong rồi nha');
+    } else {
+        inputEmail.style.border = "1px solid #997C2E";
+        console.log('sai bét là ra màu khác đó');
+    } 
 }
+
+

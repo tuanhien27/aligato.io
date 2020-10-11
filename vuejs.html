@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.Js</title>
+    <link href="./style/header.css" rel="stylesheet">
+    <link href="style/header-about.css" rel="stylesheet">
+    <link href="./style/body-vujs.css" rel="stylesheet">
+    <link href="./style/footer.css" rel="stylesheet">
+    <link href="./style/footer-about.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="style/reponsive-contact.css">
+    
+    <link rel="stylesheet" href="./style/reponsive-vuejs.css">
+</head>
+<body>
+    <section id="header">
+        <ul class="header-left">
+            <li class="header-language header-icon">
+                <img src="https://d33wubrfki0l68.cloudfront.net/4e5626a0b7db6b84c0b51f1c0cfd56490fc19b74/7a5ad/images/logo-fancy.svg" alt="hello">
+            </li>
+            <li class="header-language header-hover">
+                <i class="fas fa-bolt"></i>
+                &nbsp Latest
+            </li>
+            <li class="header-language header-hover">JavaScript</li>
+            <li class="header-language header-hover">Vue.js</li>
+            <li class="header-language header-hover">React</li>
+            <li class="header-language header-hover">Angular</li>
+            <li class="header-language header-hover">CSS</li>
+            <li class="header-language header-hover">Gatsby</li>
+            <li class="header-language header-hover-1 extra-menu">
+                <i class="fas fa-arrow-down" title="extra menu"></i> 
+                <ul class="menu-hidden">
+                    <li>
+                        <ul class="menu-show">
+                            <li>Resources</li>
+                            <li>Nodejs</li>
+                            <li>TypeScript</li>
+                            <li>Svelte</li>
+                            <li>lonic</li>
+                            <li>Stencil</li>
+                            <li>RxJS</li>
+                            <li>Redux</li>
+                            <li>Testing</li>
+                            <li>GraphQl</li>
+                            <li>Workflow</li>
+                            <li>SVG</li>
+                            <li>Electron</li>
+                            <li>Flow</li>
+                            <li>Jekyll</li>
+                            <li>Sass</li>
+                            <li>HTML</li>
+                            <li>Web Components</li>
+                            <li>Flutter</li>
+                            <li>Polymer</li>
+                        </ul>
+                    </li>  
+                </ul>                                            
+            </li>
+            <li class="header-language  header-hover-1 theme-switcher">
+                <i class="far fa-circle" title="theme switcher"></i>
+                <ul class="menu-hidden">
+                    <ul class="menu-show theme-show">
+                        <li class="button-theme" onclick="changeTheme('white')">
+                            <i class="far fa-circle theme-white"></i>&nbsp Light
+                        </li>
+                        <li class="button-theme" onclick="changeTheme('dark')">
+                            <i class="far fa-circle theme-dark"></i>&nbsp Dark
+                        </li>
+                        <li class="button-theme" onclick="changeTheme('solarized')">
+                            <i class="far fa-circle theme-solarized"></i>&nbsp Solarized
+                        </li>
+                        <li class="button-theme" onclick="changeTheme('solarizedDark')">
+                            <i class="far fa-circle theme-last"></i>&nbsp Solarized Dark
+                        </li>
+                    </ul>  
+                </ul> 
+            </li>
+            <li class="icon-reponsive"><i class="fas fa-bolt"></i>&nbsp Explore</li>
+        </ul>
+        <ul class="header-right">
+            <form action="#" method="GET">
+                <i class="fas fa-search"></i>
+                <input class="input-search" type='search' placeholder="live search" onclick="runSearch()">
+            </form>
+                
+            <li class="header-twitter">
+                <i class="fab fa-twitter"></i>
+            </li>
+        </ul>
+    </section>
+    <section id="sec-music">
+        <div class="note-music">
+            <div class="music item01"></div>
+            <div class="music item02"></div>
+            <div class="music item03"></div>
+            <div class="music item04"></div>
+            <div class="music item05"></div>
+            <div class="music item06"></div>
+            <div class="music item07"></div>
+            <div class="music item08"></div>
+            <div class="music item09"></div>
+            <div class="music item010"></div>
+            <div class="music item01"></div>
+            <div class="music item02"></div>
+            <div class="music item03"></div>
+            <div class="music item04"></div>
+            <div class="music item05"></div>
+            <div class="music item06"></div>
+            <div class="music item07"></div>
+            <div class="music item08"></div>
+            <div class="music item09"></div>
+            <div class="music item010"></div>
+            <div class="music item01"></div>
+            <div class="music item02"></div>
+            <div class="music item03"></div>
+            <div class="music item04"></div>
+            <div class="music item05"></div>
+            <div class="music item06"></div>
+            <div class="music item07"></div>
+            <div class="music item08"></div>
+            <div class="music item09"></div>
+            <div class="music item010"></div>
+            <div class="music item01"></div>
+            <div class="music item02"></div>
+            <div class="music item03"></div>
+            <div class="music item04"></div>
+            <div class="music item05"></div>
+        </div>
+    </section>
+    <section id="body-vujs">     
+        <div class="about-vuejs">
+            <img src="https://alligator.io/images/logos/vue-logo.svg" width="130" alt="vuejs logo">
+            <h1>Posts About Vue.js</h1>
+            <ul class="logo-small">
+                <li>
+                   <a href="#">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-ethernet"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-yandex-international"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="top-post">
+            <h1 class="title-host">🤓 Top Posts</h1>
+            <div class="dialog-all">
+                <div class="dialog-box">
+                    <div class="labels-small"></div>
+                    <h3>Basic Server Side Rendering with Vue.js and Express</h3>
+                    <p>Learn how to imspanlement rudimentary server-side for your Vue.js apps.</p>
+                </div>
+                <div class="dialog-box">
+                    <div class="labels-small"></div>
+                    <h3>Vue.js REST API Consumption with Axios</h3>
+                    <p>Consume REST APIs and make HTTP Requests in a quick and easy manner with Axios and Vue.js.</p>
+                </div>
+                <div class="dialog-box">
+                    <div class="labels-small"></div>
+                    <h3>Creating a Global Event Bus with Vue.js</h3>
+                    <p>How to use Vue.js for application-wide event handling.</p>
+                </div>
+            </div>    
+            <div class="line-under"></div>
+            <form action="#" method="GET">
+                <input class="input-search input-search-2" type='search' placeholder="filter..." onclick="runSearch()">
+            </form>
+            
+        </div>       
+        <div class="all-course">
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>An Overview of What's Coming in Vue 3</h3>
+                <p>Vue 3.0 is arriving soon! Get acquainted with what new features and changes are coming up. You might get inclined to get started with it prior to its release!</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>More i18n with Vue: Formatting and Fallbacks</h3>
+                <p>A look at more features from the vue-i18n plugin for dealing with i18n in your Vue apps. We'll look especially at string formatting and fallbacks.</p>
+            </div>
+            <div class="dialog-box">
+                <div class="labels-small"></div>
+                <h3>Introduction to Jest Snapshot Testing in Vue.js</h3>
+                <p>Jest snapshot testing in Vue allows you to test complicated UIs in full and over time as you make changes to the interface implementation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-test">
+        <div class="footer-container">
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show item1"> <a href="#">About</a></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show item2"> <a href="#">Contact</a></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show item3"> <a href="#">Credits</a></div>
+            <div class="item cell-black"></div>
+            <div class="item item-show item4"> <a href="#">Privacy</a></div>
+            <div class="item cell-black"></div>
+            <div class="item cell-black"></div>
+        </div>
+        <h3>Note that we link to certain 3rd party products via affiliate or sponsored links. You <br> can <a href="#">learn more about it here</a> .</h3>
+        <h3>Code snippets licensed under <a href="#">MIT</a> , unless otherwise noted.
+         <br>   Content & Graphics © 2020 Alligator.io LLC</h3>
+    </section>
+
+    <script src="run.js"></script>
+</body>
+</html>
